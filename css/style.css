@@ -1,0 +1,120 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /* Hack para Box Model */
+    scroll-snap-type: y mandatory;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(300, 69%, 71%);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 375px) {
+    body {
+        background-color: hsl(257, 40%, 49%);
+        background-image: url(../images/bg-desktop.svg);
+
+    }
+}
+
+li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+h1 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.header {
+    padding: 3rem auto;
+}
+
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.center {
+    display: block;
+    text-align: center;
+}
+@media only screen and (min-width: 375px) {
+    .center {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+}
+.margin {
+    margin: 0;
+}
+@media only screen and (min-width: 375px) {
+    .margin {
+        margin: 0 3rem;
+    }
+    
+}
+.btn-register {
+    font-size: 2rem;
+    color: hsl(257, 40%, 49%);
+    border-radius: 2rem;
+    padding: 1rem 5rem;
+}
+.btn-register:hover {
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    transition: background-color 1.5s;
+    color: white;
+}
+.social-media ul{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 2rem;    
+}
+.btn-social {
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 1rem;
+    margin: 0.5rem;
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+    
+}
+.btn-social:hover{
+    cursor: pointer;
+    background-color: hsl(257, 40%, 49%);
+    transition: background-color 1.5s;
+}
+@media only screen and (min-width: 375px) {
+    .social-media ul {
+        justify-content: flex-end;
+    }
+    .btn-social {
+        background-color: hsl(257, 40%, 49%);
+    }
+    .btn-social:hover{
+        background-color: hsl(300, 69%, 71%);
+        transition: background-color 1.5s;
+    }
+}
